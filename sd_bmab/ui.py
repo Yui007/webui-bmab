@@ -204,7 +204,7 @@ def create_ui(bscript, is_img2img):
 						with gr.Column():
 							gr.Markdown('')
 					with gr.Row():
-						elem += gr.Slider(minimum=0.1, maximum=0.95, value=0.85, step=0.01, label='Resize by person intermediate')
+						elem += gr.Slider(minimum=0.20, maximum=0.95, value=0.85, step=0.01, label='Resize by person intermediate')
 					with gr.Row():
 						elem += gr.Slider(minimum=0, maximum=1, value=0.75, step=0.01, label='Denoising Strength for inpaint and inpaint+lama', elem_id='bmab_resize_intermediate_denoising')
 				with gr.Tab('Refiner', id='bmab_refiner', elem_id='bmab_refiner_tabs'):
